@@ -20,7 +20,7 @@ body {
 	border-radius: 10px;
     border: solid 1.5px #ffffff;
   margin: 0 auto;
-  padding: 15% 3%;
+  padding: 3%;
 }
 
 .file-upload-btn {
@@ -329,7 +329,7 @@ font-family: 'Poor Story', cursive;
   height: 2rem;
   border-radius: 10px;
   width: 100%;
-  background-color: rgba(117, 204, 84, 0.2);
+  background-color: #ffdcdc;
 }
 .일반쓰레기-bar {
   position: absolute;
@@ -337,7 +337,7 @@ font-family: 'Poor Story', cursive;
   left: 0;
   height: 2rem;
   border-radius: 10px;
-  background-color: rgba(117, 204, 84, 1);
+  background-color: #ffacac;
 }
 .음식물쓰레기-box {
   position: absolute;
@@ -346,7 +346,7 @@ font-family: 'Poor Story', cursive;
   height: 2rem;
   border-radius: 10px;
   width: 100%;
-  background-color: rgba(117, 204, 84, 0.2);
+  background-color: #ffe1f3;
 }
 .음식물쓰레기-bar {
   position: absolute;
@@ -354,7 +354,7 @@ font-family: 'Poor Story', cursive;
   left: 0;
   height: 2rem;
   border-radius: 10px;
-  background-color: rgba(117, 204, 84, 1);
+  background-color: #ffc6e8;
 }
 .플라스틱-box {
   position: absolute;
@@ -363,7 +363,7 @@ font-family: 'Poor Story', cursive;
   height: 2rem;
   border-radius: 10px;
   width: 100%;
-  background-color: rgba(27, 175, 234, 0.2);
+  background-color: #f6e2ff;
 }
 .플라스틱-bar {
   position: absolute;
@@ -371,7 +371,8 @@ font-family: 'Poor Story', cursive;
   left: 0;
   height: 2rem;
   border-radius: 10px;
-  background-color: rgba(27, 175, 234, 1);
+  background-color: #eabcff
+;
 }
 .종이-box {
   position: absolute;
@@ -380,7 +381,7 @@ font-family: 'Poor Story', cursive;
   height: 2rem;
   border-radius: 10px;
   width: 100%;
-  background-color: rgba(251, 176, 59, 0.2);
+  background-color: #e4dfff;
 }
 .종이-bar {
   position: absolute;
@@ -388,7 +389,7 @@ font-family: 'Poor Story', cursive;
   left: 0;
   height: 2rem;
   border-radius: 10px;
-  background-color: rgba(251, 176, 59, 1);
+  background-color: #c5baff;
 }
 .스티로폼-box {
   position: absolute;
@@ -397,7 +398,7 @@ font-family: 'Poor Story', cursive;
   height: 2rem;
   border-radius: 10px;
   width: 100%;
-  background-color: rgba(195, 140, 102, 0.2);
+  background-color: #dee9ff;
 }
 .스티로폼-bar {
   position: absolute;
@@ -405,7 +406,7 @@ font-family: 'Poor Story', cursive;
   left: 0;
   height: 2rem;
   border-radius: 10px;
-  background-color: rgba(195, 140, 102, 1);
+  background-color: #b5ceff;
 }
 .유리-box {
   position: absolute;
@@ -414,7 +415,7 @@ font-family: 'Poor Story', cursive;
   height: 2rem;
   border-radius: 10px;
   width: 100%;
-  background-color: rgba(49, 132, 155, 0.2);
+  background-color:#e1f8ff;
 }
 .유리-bar {
   position: absolute;
@@ -422,7 +423,7 @@ font-family: 'Poor Story', cursive;
   left: 0;
   height: 2rem;
   border-radius: 10px;
-  background-color: rgba(49, 132, 155, 1);
+  background-color: #b5eeff;
 }
 .종이팩-box {
   position: absolute;
@@ -431,7 +432,7 @@ font-family: 'Poor Story', cursive;
   height: 2rem;
   border-radius: 10px;
   width: 100%;
-  background-color: rgba(235, 166, 190, 0.2);
+  background-color:#dbfff2;
 }
 .종이팩-bar {
   position: absolute;
@@ -439,7 +440,7 @@ font-family: 'Poor Story', cursive;
   left: 0;
   height: 2rem;
   border-radius: 10px;
-  background-color: rgba(235, 166, 190, 1);
+  background-color: #9effdc;
 }
 .종이컵-box {
   position: absolute;
@@ -448,7 +449,8 @@ font-family: 'Poor Story', cursive;
   height: 2rem;
   border-radius: 10px;
   width: 100%;
-  background-color: rgba(235, 166, 190, 0.2);
+  background-color: #deffdd
+;
 }
 .종이컵-bar {
   position: absolute;
@@ -456,7 +458,7 @@ font-family: 'Poor Story', cursive;
   left: 0;
   height: 2rem;
   border-radius: 10px;
-  background-color: rgba(235, 166, 190, 1);
+  background-color: #b0fead;
 }
 .비닐-box {
   position: absolute;
@@ -465,7 +467,7 @@ font-family: 'Poor Story', cursive;
   height: 2rem;
   border-radius: 10px;
   width: 100%;
-  background-color: rgba(235, 166, 190, 0.2);
+  background-color: #fffee5;
 }
 .비닐-bar {
   position: absolute;
@@ -473,7 +475,7 @@ font-family: 'Poor Story', cursive;
   left: 0;
   height: 2rem;
   border-radius: 10px;
-  background-color: rgba(235, 166, 190, 1);
+  background-color: #fffb96;
 }
 .캔-box {
   position: absolute;
@@ -482,7 +484,8 @@ font-family: 'Poor Story', cursive;
   height: 2rem;
   border-radius: 10px;
   width: 100%;
-  background-color: rgba(235, 166, 190, 0.2);
+  background-color: #ffefcd
+;
 }
 .캔-bar {
   position: absolute;
@@ -490,7 +493,7 @@ font-family: 'Poor Story', cursive;
   left: 0;
   height: 2rem;
   border-radius: 10px;
-  background-color: rgba(235, 166, 190, 1);
+  background-color: #ffda8c;
 }
 .percent-text {
   font-size: 1rem;
@@ -513,74 +516,85 @@ font-family: 'Poor Story', cursive;
     font-size: 1rem;
 	color: #000000;
 }
-.일반쓰레기-animal-title {
+
+.일반쓰레기-recycle-title {
   color: #2d7d3e;
+	font-size: 1.1rem;
 }
-.일반쓰레기-animal-recycle {
-    color: #000000;
+.일반쓰레기-recycle {
+  color: #000000;
     font-size: 1rem;
 }
-.음식물쓰레기-animal-title {
+.음식물쓰레기-recycle-title {
   color: #2d7d3e;
+	font-size: 1.1rem;
 }
-.음식물쓰레기-animal-recycle {
-    color: #000000;
+.음식물쓰레기-recycle {
+  color: #000000;
     font-size: 1rem;
 }
-.플라스틱-animal-title {
+.플라스틱-recycle-title {
   color: #2d7d3e;
+	font-size: 1.1rem;
 }
-.플라스틱-animal-recycle {
-    color: #000000;
+.플라스틱-recycle {
+  color: #000000;
     font-size: 1rem;
 }
-.종이-animal-title {
+.종이-recycle-title {
   color: #2d7d3e;
+	font-size: 1.1rem;
 }
-.종이-animal-recycle {
-    color: #000000;
+.종이-recycle {
+  color: #000000;
     font-size: 1rem;
 }
-.스티로폼-animal-title {
+.스티로폼-recycle-title {
   color: #2d7d3e;
+	font-size: 1.1rem;
 }
-.스티로폼-animal-recycle {
-    color: #000000;
+.스티로폼-recycle {
+  color: #000000;
     font-size: 1rem;
 }
-.유리-animal-title {
+.유리-recycle-title {
   color: #2d7d3e;
+	font-size: 1.1rem;
 }
-.유리-animal-recycle {
-    color: #000000;
+.유리-recycle {
+  color: #000000;
     font-size: 1rem;
 }
-.종이팩-animal-title {
+.종이팩-recycle-title {
   color: #2d7d3e;
+	font-size: 1.1rem;
 }
-.종이팩-animal-recycle {
-    color: #000000;
+.종이팩-recycle {
+  color: #000000;
     font-size: 1rem;
 }
-.종이컵-animal-title {
+.종이컵-recycle-title {
   color: #2d7d3e;
+	font-size: 1.1rem;
 }
-.종이컵-animal-recycle {
-    color: #000000;
+.종이컵-recycle {
+  color: #000000;
     font-size: 1rem;
 }
-.비닐-animal-title {
+.비닐-recycle-title {
   color: #2d7d3e;
+	font-size: 1.1rem;
 }
-.비닐-animal-recycle {
-    color: #000000;
+.비닐-recycle {
+  color: #000000;
     font-size: 1rem;
 }
-.캔-animal-title {
+.캔-recycle-title {
   color: #2d7d3e;
+	font-size: 1.1rem;
 }
-.캔-animal-recycle {
-    color: #000000;
+.캔-recycle {
+  color: #000000;
     font-size: 1rem;
 }
 

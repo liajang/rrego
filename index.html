@@ -115,240 +115,237 @@
 	<footer class="footer pt-5 container d-flex justify-content-center">
 		<div>
 			<p>&copy; rrego lia 2020. All Rights Reserved. </p>
-			<!-- Modal -->
-			<div class="modal fade" id="adModal" tabindex="-1" role="dialog" aria-labelledby="adModalLabel" aria-hidden="true">
-				<div class="modal-dialog" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h5 class="modal-title" id="adModalLabel">(AD)광고 - 재시도를 한 번 더 눌러주세요.</h5>
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								<span aria-hidden="true">&times;</span>
-							</button>
-						</div>
-						<div class="modal-body d-flex justify-content-center">
-							<ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-sohv6nrjcxma" data-ad-width="300" data-ad-height="250"></ins>
-							<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-						</div>
-						<div class="modal-footer d-flex justify-content-center">
-							<button type="button p-2" class="try-again-btn" onclick="gaReload2();">
-								<span class="try-again-text">다른 사진으로 재시도</span>
-							</button>
-						</div>
-					</div>
+		</div>
+	</footer>
+
+	<!-- Modal -->
+	<div class="modal fade" id="adModal" tabindex="-1" role="dialog" aria-labelledby="adModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">				
+				<div class="modal-header">
+					<h5 class="modal-title" id="adModalLabel">(AD)광고 - 재시도를 한번 더 눌러주세요.</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body d-flex justify-content-center">
+					<ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-1hrj9wz5xz7fo" data-ad-width="300" data-ad-height="250"></ins>
+					<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+				</div>				
+				<div class="modal-footer d-flex justify-content-center">
+					<button type="button p-2" class="try-again-btn" onclick="removeUpload()">
+						<span class="try-again-text">다른 사진으로 재시도</span>
+					</button>
 				</div>
 			</div>
-			<script>
-				function gaReload1() {
-					gtag('event', '다른 사진으로 재시도 1차', {
-						'event_category': '다른 사진으로 재시도'
-					});
-				}
+		</div>
+	</div>
+	<script>
+		function gaReload1() {
+			gtag('event', '다른 사진으로 재시도 1차', {
+				'event_category': '다른 사진으로 재시도'
+			});
+		}
+	</script>
 
-				function gaReload2() {
-					gtag('event', '다른 사진으로 재시도 2차', {
-						'event_category': '다른 사진으로 재시도'
-					});
-					window.location.reload();
-				}
-			</script>
-			<script>
-				/**
-				 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-				 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-				/*
-				var disqus_config = function () {
-				this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-				this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+	<script>
+		/**
+		 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+		 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+		/*
+		var disqus_config = function () {
+		this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+		this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+		};
+		*/
+		(function() { // DON'T EDIT BELOW THIS LINE
+			var d = document,
+				s = d.createElement('script');
+			s.src = 'https://rrego.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+		})();
+	</script>
+	<noscript>Please enable JavaScript to view the
+		<a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+	</noscript>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+	<script>
+		function readURL(input) {
+			if (input.files && input.files[0]) {
+				var reader = new FileReader();
+				reader.onload = function(e) {
+					$('.image-upload-wrap').hide();
+					$('#loading').show();
+					$('.file-upload-image').attr('src', e.target.result);
+					$('.file-upload-content').show();
+					$('.image-title').html(input.files[0].name);
 				};
-				*/
-				(function() { // DON'T EDIT BELOW THIS LINE
-					var d = document,
-						s = d.createElement('script');
-					s.src = 'https://rrego.disqus.com/embed.js';
-					s.setAttribute('data-timestamp', +new Date());
-					(d.head || d.body).appendChild(s);
-				})();
-			</script>
-			<noscript>Please enable JavaScript to view the
-				<a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-			</noscript>
-
-			<!-- Optional JavaScript -->
-			<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-			<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-			<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
-			<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
-			<script>
-				function readURL(input) {
-					if (input.files && input.files[0]) {
-						var reader = new FileReader();
-						reader.onload = function(e) {
-							$('.image-upload-wrap').hide();
-							$('#loading').show();
-							$('.file-upload-image').attr('src', e.target.result);
-							$('.file-upload-content').show();
-							$('.image-title').html(input.files[0].name);
-						};
-						reader.readAsDataURL(input.files[0]);
-						init().then(() => {
-							console.log("hello");
-							predict();
-							$('#loading').hide();
-						});
-						//predict();
-					} else {
-						removeUpload();
-					}
-				}
-
-				function removeUpload() {
-					$('.file-upload-input').replaceWith($('.file-upload-input').clone());
-					$('.file-upload-content').hide();
-					$('.image-upload-wrap').show();
-				}
-				$('.image-upload-wrap').bind('dragover', function() {
-					$('.image-upload-wrap').addClass('image-dropping');
+				reader.readAsDataURL(input.files[0]);
+				init().then(() => {
+					console.log("hello");
+					predict();
+					$('#loading').hide();
 				});
-				$('.image-upload-wrap').bind('dragleave', function() {
-					$('.image-upload-wrap').removeClass('image-dropping');
-				});
-			</script>
-			<script type="text/javascript">
-				// More API functions here:
-				// https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
-				// the link to your model provided by Teachable Machine export panel
-				const URL = "https://teachablemachine.withgoogle.com/models/cWF2sD1Ge/";
-				let model, webcam, labelContainer, maxPredictions;
-				// Load the image model and setup the webcam
-				async function init() {
-					const modelURL = URL + "model.json";
-					const metadataURL = URL + "metadata.json";
-					// load the model and metadata
-					// Refer to tmImage.loadFromFiles() in the API to support files from a file picker
-					// or files from your local hard drive
-					// Note: the pose library adds "tmImage" object to your window (window.tmImage)
-					model = await tmImage.load(modelURL, metadataURL);
-					maxPredictions = model.getTotalClasses();
-					labelContainer = document.getElementById("label-container");
-					for (let i = 0; i < maxPredictions; i++) { // and class labels
-						var element = document.createElement("div")
-						element.classList.add("d-flex");
-						labelContainer.appendChild(document.createElement("div"));
-					}
+				//predict();
+			} else {
+				removeUpload();
+			}
+		}
+
+		function removeUpload() {
+			$('.file-upload-input').replaceWith($('.file-upload-input').clone());
+			$('.file-upload-content').hide();
+			$('.image-upload-wrap').show();
+		}
+		$('.image-upload-wrap').bind('dragover', function() {
+			$('.image-upload-wrap').addClass('image-dropping');
+		});
+		$('.image-upload-wrap').bind('dragleave', function() {
+			$('.image-upload-wrap').removeClass('image-dropping');
+		});
+	</script>
+	<script type="text/javascript">
+		// More API functions here:
+		// https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
+		// the link to your model provided by Teachable Machine export panel
+		const URL = "https://teachablemachine.withgoogle.com/models/cWF2sD1Ge/";
+		let model, webcam, labelContainer, maxPredictions;
+		// Load the image model and setup the webcam
+		async function init() {
+			const modelURL = URL + "model.json";
+			const metadataURL = URL + "metadata.json";
+			// load the model and metadata
+			// Refer to tmImage.loadFromFiles() in the API to support files from a file picker
+			// or files from your local hard drive
+			// Note: the pose library adds "tmImage" object to your window (window.tmImage)
+			model = await tmImage.load(modelURL, metadataURL);
+			maxPredictions = model.getTotalClasses();
+			labelContainer = document.getElementById("label-container");
+			for (let i = 0; i < maxPredictions; i++) { // and class labels
+				var element = document.createElement("div")
+				element.classList.add("d-flex");
+				labelContainer.appendChild(element);
+			}
+		}
+		// run the webcam image through the image model
+		async function predict() {
+			// predict can take in an image, video or canvas html element
+			var image = document.getElementById("recycle-image")
+			const prediction = await model.predict(image, false);
+			prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
+			console.log(prediction[0].className);
+			var resultTitle, resultExplain, resultRecycle;
+			switch (prediction[0].className) {
+				case "일반쓰레기":
+					resultTitle = "혹시 일반쓰레기인가요?"
+					resultExplain = "가연성폐기물 및 불연성폐기물은 쓰레기종량제 봉투나 전용 PP마대, 전용마대 등에 담아 배출합니다."
+					resultRecycle = "일반쓰레기: 음식물쓰레기, 용기, 포장을 제외한 플리스틱류, 재활용할 수 없는 종이류, 유리류 등이 해당합니다. 백열전구, 깨진 유리, 도자기, 화분 등의 불연성폐기물의 처리는 지자체의 처리 기준에 맞게 분리배출해주세요!"
+					break;
+				case "음식물쓰레기":
+					resultTitle = "혹시 음식물쓰레기인가요?"
+					resultExplain = "물기를 꽉 짜서 최대한 수분을 제거한 후 배출해주세요. 일회용 비닐봉지, 나무젓가락, 이쑤시개 등 이물질은 제거합니다. 길이가 긴 채소류와 덩어리가 큰 수박 등은 잘게 썰어 부피를 줄여 배출해주세요. 배출요일 및 배출시간을 지킵니다."
+					resultRecycle = "음식물쓰레기는 사료화 및 퇴비화 공정 등을 통해 재활용되며, 바이오가스화를 통해 자동차 연료 등의 에너지로도 재활용됩니다. 수분이 적고 딱딱해서 재활용하기 어려운 핵과류의 씨, 갑각류나 어패류의 껍데기, 닭과 생선의 뼈, 티백, 한약재, 복어 내장 등은 음식물류폐기물이 아닙니다! "
+				case "플라스틱":
+					resultTitle = "혹시 플라스틱인가요?"
+					resultExplain = "내용물을 비우고 물로 헹구는 등 이물질을 제거하여 배출합니다. 부착상표, 부속품 등 본체와 다른 재질은 제거한 후 배출해주세요!"
+					resultRecycle = "플라스틱 종류: HDPE, LDPE, PP, PS, PVC, OTHER. 플라스틱 이외의 재질이 부착된 완구나 문구류, 옷걸이, 칫솔, 파일철, 전화기, 낚싯대, 유모차, 보행기, CD, DVD 등은 종량제 봉투, 특수규격마대 또는 대형폐기물 처리등 지자체 조례에 따라 배출해주세요!"
+					break;
+				case "종이":
+					resultTitle = "혹시 종이인가요?"
+					resultExplain = "물기에 젖지 않도록 하고, 반듯하게 펴서 차곡차곡 쌓은 후 흩날리지 않도록 끈 등으로 묶어서 배출해주세요! 스프링, 테이프 등 종이류와 다른 재질은 제거한 후 배출합니다. 종이가 아닌 소재는 쓰레기종량제 봉투로 배출하세요!"
+					resultRecycle = "종이류: 신문, 책자, 노트, 상자, 잡지, 공책, 골판지 등. 비닐 코팅 종이(광고지, 치킨 속포장재 등), 금은박지, 벽지, 자석전단지, 이물질을 제거하기 어려운 종이, 비닐 코팅된 표지, 상자에 붙어있는 테이프 등은 부속 재질에 따라 분리배출하거나 종량제봉투 등으로 배출해주세요!"
+				case "스티로폼":
+					resultTitle = "혹시 스티로폼인가요?"
+					resultExplain = "내용물을 비우고 물로 헹구는 등 이물질을 제거하여 배출합니다. 부착상표 등 스티로폼과 다른 재질은 제거한 후 배출해주세요!"
+					resultRecycle = "스티로폼 완충재: 전자제품 구입 시 완충제로 사용되는 발포합성수지 포장재는 가급적 구입처로 반납합니다. 타 재질과 코팅 또는 접착된 발포스티렌, 건축용 내외장재 스티로폼, 이물질을 제거하기 어려운 경우는 종량제봉투, 특수규격마대 또는 대형폐기물 처리 등 지자체 조례에 따라 배출해주세요."
+					break;
+				case "유리":
+					resultTitle = "혹시 유리인가요?"
+					resultExplain = "내용물을 비우고 물로 헹구는 등 이물질을 제거하여 배출합니다. 담배꽁초 등 이물질을 넣지 않고 배출합니다. 유리병이 깨지지 않도록 주의하여 배출해주세요. 소주, 맥주 등 빈용기보증금 대상 유리병은 소매점 등으로 반납하여 보증금을 환급받을 수 있습니다!"
+					resultRecycle = "유리병류가 아닙니다!: 거울, 전구, 깨진유리, 도자기류, 내열식기류, 유리 뚜껑, 크리스탈 유리제품, 유독물 병 등. 유리병류에 해당하는 품목에는 음료수병, 와인병, 양주병, 드링크병 등이 있습니다."
+				case "종이팩":
+					resultTitle = "혹시 종이팩인가요?"
+					resultExplain = "화장지나 미용티슈와 같은 제품으로 재탄생하는 종이팩은 내용물을 비우고 물로 헹구는 등 이물질을 제거하고 말린 후 배출합니다. 빨대, 비닐 등 종이팩과 다른 재질은 제거해주세요!"
+					resultRecycle = "종이팩: 우유팩, 두유팩, 소주팩, 쥬스팩 등의 살균팩 혹은 멸균팩"
+					break;
+				case "종이컵":
+					resultTitle = "혹시 종이컵인가요?"
+					resultExplain = "내용물을 비우고 물로 헹구는 등 이물질을 제거하여 배출해주세요!"
+					resultRecycle = "종이컵: 테이크아웃 종이컵, 이물질이 제거된 종이컵 등"
+				case "비닐":
+					resultTitle = "혹시 비닐인가요?"
+					resultExplain = "내용물을 모두 비우고 물로 헹구는 등 이물질을 제거하여 배출해주세요! 흩날리지 않도록 봉투에 담아 배출합니다."
+					resultRecycle = "비닐류, 필름류: HDPE, LDPE, PP, PS, PVC, OTHER. 깨끗하게 이물질 제거가 되지 않은 랩필름이나 식탁보, 고무장갑, 장판, 돗자리, 섬유류(천막, 현수막, 의류, 침구류 등)은 종량제봉투, 특수규격마대 또는 대형폐기물 처리 등 지자체 조례에 따라 배출해주세요!"
+					break;
+				case "캔":
+					resultTitle = "혹시 캔인가요?"
+					resultExplain = "내용물을 비우고 물로 헹구는 등 이물질을 제거하여 배출해주세요. 담배꽁초 등 이물질을 넣지 않고 배출해야합니다! 플라스틱 뚜껑 등 금속캔과 다른 재질은 제거한 후 배출해주세요. 부탄가스나 살충제와 같은 가스용기는 가급적 통풍이 잘되는 장소에서 노즐을 누르는 등 내용물을 완전히 제거한 후 배출해주세요!"
+					resultRecycle = "캔류: 음료수캔, 맥주캔, 통조림 캔 등의 철캔, 알루미늄캔, 부탄가스, 살충제 용기, 스프레이 용기 등"
+					break;
+				default:
+					resultTitle = "알 수 없습니다.."
+					resultExplain = "사진의 각도에 따라 결과가 달라질 수 있습니다. 다시 한번 시도해보세요."
+					resultRecycle = ""
+			}
+			var title = "<div class='" + prediction[0].className + "-recycle-title'>" + resultTitle + "</div>"
+			var explain = "<div class='recycle-explain pt-2'>" + resultExplain + "</div>"
+			var recycle = "<div class='" + prediction[0].className + "-recycle pt-2 pb-2'>" + resultRecycle + "</div>"
+			$('.result-message').html(title + explain + recycle);
+			var barWidth;
+			for (let i = 0; i < maxPredictions; i++) {
+				if (prediction[i].probability.toFixed(2) > 0.1) {
+					barWidth = Math.round(prediction[i].probability.toFixed(2) * 100) + "%";
+				} else if (prediction[i].probability.toFixed(2) >= 0.01) {
+					barWidth = "4%"
+				} else {
+					barWidth = "2%"
 				}
-				// run the webcam image through the image model
-				async function predict() {
-					// predict can take in an image, video or canvas html element
-					var image = document.getElementById("recycle-image")
-					const prediction = await model.predict(image, false);
-					prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
-					console.log(prediction[0].className);
-					var resultTitle, resultExplain, resultRecycle;
-					switch (prediction[0].className) {
-						case "일반쓰레기":
-							resultTitle = "혹시 일반쓰레기인가요?"
-							resultExplain = "가연성폐기물 및 불연성폐기물은 쓰레기종량제 봉투나 전용 PP마대, 전용마대 등에 담아 배출합니다."
-							resultRecycle = "일반쓰레기: 음식물쓰레기, 용기, 포장을 제외한 플리스틱류, 재활용할 수 없는 종이류, 유리류 등이 해당합니다. 백열전구, 깨진 유리, 도자기, 화분 등의 불연성폐기물의 처리는 지자체의 처리 기준에 맞게 분리배출해주세요!"
-							break;
-						case "음식물쓰레기":
-							resultTitle = "혹시 음식물쓰레기인가요?"
-							resultExplain = "물기를 꽉 짜서 최대한 수분을 제거한 후 배출해주세요. 일회용 비닐봉지, 나무젓가락, 이쑤시개 등 이물질은 제거합니다. 길이가 긴 채소류와 덩어리가 큰 수박 등은 잘게 썰어 부피를 줄여 배출해주세요. 배출요일 및 배출시간을 지킵니다."
-							resultRecycle = "음식물쓰레기는 사료화 및 퇴비화 공정 등을 통해 재활용되며, 바이오가스화를 통해 자동차 연료 등의 에너지로도 재활용됩니다. 수분이 적고 딱딱해서 재활용하기 어려운 핵과류의 씨, 갑각류나 어패류의 껍데기, 닭과 생선의 뼈, 티백, 한약재, 복어 내장 등은 음식물류폐기물이 아닙니다! "
-						case "플라스틱":
-							resultTitle = "혹시 플라스틱인가요?"
-							resultExplain = "내용물을 비우고 물로 헹구는 등 이물질을 제거하여 배출합니다. 부착상표, 부속품 등 본체와 다른 재질은 제거한 후 배출해주세요!"
-							resultRecycle = "플라스틱 종류: HDPE, LDPE, PP, PS, PVC, OTHER. 플라스틱 이외의 재질이 부착된 완구나 문구류, 옷걸이, 칫솔, 파일철, 전화기, 낚싯대, 유모차, 보행기, CD, DVD 등은 종량제 봉투, 특수규격마대 또는 대형폐기물 처리등 지자체 조례에 따라 배출해주세요!"
-							break;
-						case "종이":
-							resultTitle = "혹시 종이인가요?"
-							resultExplain = "물기에 젖지 않도록 하고, 반듯하게 펴서 차곡차곡 쌓은 후 흩날리지 않도록 끈 등으로 묶어서 배출해주세요! 스프링, 테이프 등 종이류와 다른 재질은 제거한 후 배출합니다. 종이가 아닌 소재는 쓰레기종량제 봉투로 배출하세요!"
-							resultRecycle = "종이류: 신문, 책자, 노트, 상자, 잡지, 공책, 골판지 등. 비닐 코팅 종이(광고지, 치킨 속포장재 등), 금은박지, 벽지, 자석전단지, 이물질을 제거하기 어려운 종이, 비닐 코팅된 표지, 상자에 붙어있는 테이프 등은 부속 재질에 따라 분리배출하거나 종량제봉투 등으로 배출해주세요!"
-						case "스티로폼":
-							resultTitle = "혹시 스티로폼인가요?"
-							resultExplain = "내용물을 비우고 물로 헹구는 등 이물질을 제거하여 배출합니다. 부착상표 등 스티로폼과 다른 재질은 제거한 후 배출해주세요!"
-							resultRecycle = "스티로폼 완충재: 전자제품 구입 시 완충제로 사용되는 발포합성수지 포장재는 가급적 구입처로 반납합니다. 타 재질과 코팅 또는 접착된 발포스티렌, 건축용 내외장재 스티로폼, 이물질을 제거하기 어려운 경우는 종량제봉투, 특수규격마대 또는 대형폐기물 처리 등 지자체 조례에 따라 배출해주세요."
-							break;
-						case "유리":
-							resultTitle = "혹시 유리인가요?"
-							resultExplain = "내용물을 비우고 물로 헹구는 등 이물질을 제거하여 배출합니다. 담배꽁초 등 이물질을 넣지 않고 배출합니다. 유리병이 깨지지 않도록 주의하여 배출해주세요. 소주, 맥주 등 빈용기보증금 대상 유리병은 소매점 등으로 반납하여 보증금을 환급받을 수 있습니다!"
-							resultRecycle = "유리병류가 아닙니다!: 거울, 전구, 깨진유리, 도자기류, 내열식기류, 유리 뚜껑, 크리스탈 유리제품, 유독물 병 등. 유리병류에 해당하는 품목에는 음료수병, 와인병, 양주병, 드링크병 등이 있습니다."
-						case "종이팩":
-							resultTitle = "혹시 종이팩인가요?"
-							resultExplain = "화장지나 미용티슈와 같은 제품으로 재탄생하는 종이팩은 내용물을 비우고 물로 헹구는 등 이물질을 제거하고 말린 후 배출합니다. 빨대, 비닐 등 종이팩과 다른 재질은 제거해주세요!"
-							resultRecycle = "종이팩: 우유팩, 두유팩, 소주팩, 쥬스팩 등의 살균팩 혹은 멸균팩"
-							break;
-						case "종이컵":
-							resultTitle = "혹시 종이컵인가요?"
-							resultExplain = "내용물을 비우고 물로 헹구는 등 이물질을 제거하여 배출해주세요!"
-							resultRecycle = "종이컵: 테이크아웃 종이컵, 이물질이 제거된 종이컵 등"
-						case "비닐":
-							resultTitle = "혹시 비닐인가요?"
-							resultExplain = "내용물을 모두 비우고 물로 헹구는 등 이물질을 제거하여 배출해주세요! 흩날리지 않도록 봉투에 담아 배출합니다."
-							resultRecycle = "비닐류, 필름류: HDPE, LDPE, PP, PS, PVC, OTHER. 깨끗하게 이물질 제거가 되지 않은 랩필름이나 식탁보, 고무장갑, 장판, 돗자리, 섬유류(천막, 현수막, 의류, 침구류 등)은 종량제봉투, 특수규격마대 또는 대형폐기물 처리 등 지자체 조례에 따라 배출해주세요!"
-							break;
-						case "캔":
-							resultTitle = "혹시 캔인가요?"
-							resultExplain = "내용물을 비우고 물로 헹구는 등 이물질을 제거하여 배출해주세요. 담배꽁초 등 이물질을 넣지 않고 배출해야합니다! 플라스틱 뚜껑 등 금속캔과 다른 재질은 제거한 후 배출해주세요. 부탄가스나 살충제와 같은 가스용기는 가급적 통풍이 잘되는 장소에서 노즐을 누르는 등 내용물을 완전히 제거한 후 배출해주세요!"
-							resultRecycle = "캔류: 음료수캔, 맥주캔, 통조림 캔 등의 철캔, 알루미늄캔, 부탄가스, 살충제 용기, 스프레이 용기 등"
-							break;
-						default:
-							resultTitle = "알 수 없습니다.."
-							resultExplain = "사진의 각도에 따라 결과가 달라질 수 있습니다. 다시 한번 시도해보세요."
-							resultRecycle = ""
-					}
-					var title = "<div class='" + prediction[0].className + "-recycle-title'>" + resultTitle + "</div>"
-					var explain = "<div class='recycle-explain pt-2'>" + resultExplain + "</div>"
-					var recycle = "<div class='" + prediction[0].className + "-recycle pt-2 pb-2'>" + resultRecycle + "</div>"
-					$('.result-message').html(title + explain + recycle);
-					var barWidth;
-					for (let i = 0; i < maxPredictions; i++) {
-						if (prediction[i].probability.toFixed(2) > 0.1) {
-							barWidth = Math.round(prediction[i].probability.toFixed(2) * 100) + "%";
-						} else if (prediction[i].probability.toFixed(2) >= 0.01) {
-							barWidth = "4%"
-						} else {
-							barWidth = "2%"
-						}
-						var labelTitle;
-						switch (prediction[i].className) {
-							case "일반쓰레기":
-								labelTitle = "일반쓰레기"
-								break;
-							case "음식물쓰레기":
-								labelTitle = "음식물쓰레기"
-								break;
-							case "플라스틱":
-								labelTitle = "플라스틱"
-								break;
-							case "종이":
-								labelTitle = "종이"
-								break;
-							case "스티로폼":
-								labelTitle = "스티로폼"
-								break;
-							case "유리":
-								labelTitle = "유리"
-								break;
-							case "종이팩":
-								labelTitle = "종이팩"
-							case "종이컵":
-								labelTitle = "여우상"
-							case "비닐":
-								labelTitle = "비닐"
-							case "캔":
-								labelTitle = "캔"
-								break;
-							default:
-								labelTitle = "알 수 없음"
-						}
-						var label = "<div class='recycle-label d-flex align-items-center'>" + labelTitle + "</div>"
-						var bar = "<div class='bar-container position-relative container'><div class='" + prediction[i].className + "-box'></div><div class='d-flex justify-content-center align-items-center " + prediction[i].className + "-bar' style='width: " + barWidth + "'><span class='d-block percent-text'>" + Math.round(prediction[i].probability.toFixed(2) * 100) + "%</span></div></div>"
-						labelContainer.childNodes[i].innerHTML = label + bar;
-					}
+				var labelTitle;
+				switch (prediction[i].className) {
+					case "일반쓰레기":
+						labelTitle = "일반쓰레기"
+						break;
+					case "음식물쓰레기":
+						labelTitle = "음식물쓰레기"
+						break;
+					case "플라스틱":
+						labelTitle = "플라스틱"
+						break;
+					case "종이":
+						labelTitle = "종이"
+						break;
+					case "스티로폼":
+						labelTitle = "스티로폼"
+						break;
+					case "유리":
+						labelTitle = "유리"
+						break;
+					case "종이팩":
+						labelTitle = "종이팩"
+					case "종이컵":
+						labelTitle = "종이컵"
+					case "비닐":
+						labelTitle = "비닐"
+					case "캔":
+						labelTitle = "캔"
+						break;
+					default:
+						labelTitle = "알 수 없음"
 				}
-			</script>
+				var label = "<div class='recycle-label d-flex align-items-center'>" + labelTitle + "</div>"
+				var bar = "<div class='bar-container position-relative container'><div class='" + prediction[i].className + "-box'></div><div class='d-flex justify-content-center align-items-center " + prediction[i].className + "-bar' style='width: " + barWidth + "'><span class='d-block percent-text'>" + Math.round(prediction[i].probability.toFixed(2) * 100) + "%</span></div></div>"
+				labelContainer.childNodes[i].innerHTML = label + bar;
+			}
+		}
+	</script>
 
 </body>
 <!-- Copyright (c) 2020 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
