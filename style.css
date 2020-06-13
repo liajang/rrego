@@ -10,15 +10,17 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Do Hyeon', sans-serif;
   background-color: #ffffff;
+  box-sizing: border-box;
 }
 
 .file-upload {
   background-color: #ffffff;
-  width: 600px;
+	border-radius: 10px;
+    border: solid 1.5px #ffffff;
   margin: 0 auto;
-  padding: 20px;
+  padding: 15% 3%;
 }
 
 .file-upload-btn {
@@ -52,6 +54,9 @@ body {
   display: none;
   text-align: center;
 }
+#loading {
+  display: none;
+}
 
 .file-upload-input {
   position: absolute;
@@ -65,8 +70,11 @@ body {
 }
 
 .image-upload-wrap {
+	width: 60%;
+	margin: 0 auto;
+	object-fit: contain;
   margin-top: 20px;
-  border: 4px dashed #1FB264;
+  border: dashed 4px #1FB264;
   position: relative;
 }
 
@@ -86,32 +94,30 @@ body {
 }
 
 .drag-text h3 {
-  font-weight: 100;
+  font-weight: 500;
   text-transform: uppercase;
   color: #15824B;
-  padding: 60px 0;
 }
 
 .file-upload-image {
-  max-height: 200px;
-  max-width: 200px;
+  max-height: 60%;
+  max-width: 60%;
   margin: auto;
-  padding: 20px;
+  padding: 10px;
 }
 
-.remove-image {
-  width: 200px;
-  margin: 0;
-  color: #fff;
-  background: #cd4535;
-  border: none;
-  padding: 10px;
-  border-radius: 4px;
-  border-bottom: 4px solid #b02818;
-  transition: all .2s ease;
-  outline: none;
-  text-transform: uppercase;
-  font-weight: 700;
+.try-again-btn {
+  border-radius: 40px;
+  border: solid 1.5px #15824B;
+  background-color: #15824B;
+}
+
+.try-again-text {
+  display: block;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #ffffff;
+  padding: 4px 15px;
 }
 
 .remove-image:hover {
@@ -153,7 +159,7 @@ body {
 }
 
 .section {
-	margin-top: 15%;
+	margin-top: 50px;
 }
 
 .title {
@@ -308,3 +314,282 @@ font-family: 'Poor Story', cursive;
 	margin: 0 auto;
 }
 
+.footer {
+    background-color: initial;
+    color: initial;
+}
+
+.bar-container {
+  height: 2.7rem;
+}
+.일반쓰레기-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(117, 204, 84, 0.2);
+}
+.일반쓰레기-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(117, 204, 84, 1);
+}
+.음식물쓰레기-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(117, 204, 84, 0.2);
+}
+.음식물쓰레기-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(117, 204, 84, 1);
+}
+.플라스틱-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(27, 175, 234, 0.2);
+}
+.플라스틱-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(27, 175, 234, 1);
+}
+.종이-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(251, 176, 59, 0.2);
+}
+.종이-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(251, 176, 59, 1);
+}
+.스티로폼-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(195, 140, 102, 0.2);
+}
+.스티로폼-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(195, 140, 102, 1);
+}
+.유리-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(49, 132, 155, 0.2);
+}
+.유리-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(49, 132, 155, 1);
+}
+.종이팩-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(235, 166, 190, 0.2);
+}
+.종이팩-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(235, 166, 190, 1);
+}
+.종이컵-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(235, 166, 190, 0.2);
+}
+.종이컵-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(235, 166, 190, 1);
+}
+.비닐-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(235, 166, 190, 0.2);
+}
+.비닐-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(235, 166, 190, 1);
+}
+.캔-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(235, 166, 190, 0.2);
+}
+.캔-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(235, 166, 190, 1);
+}
+.percent-text {
+  font-size: 1rem;
+  color: #ffffff;
+}
+.recycle-label {
+    width: 20%;
+    text-align: left;
+    height: 2rem;
+}
+#label-container {
+    width: 80%;
+    margin: 0 auto;
+}
+.result-message {
+    font-size: 1rem;
+}
+
+.result-explain {
+    font-size: 1rem;
+	color: #000000;
+}
+.일반쓰레기-animal-title {
+  color: #2d7d3e;
+}
+.일반쓰레기-animal-recycle {
+    color: #000000;
+    font-size: 1rem;
+}
+.음식물쓰레기-animal-title {
+  color: #2d7d3e;
+}
+.음식물쓰레기-animal-recycle {
+    color: #000000;
+    font-size: 1rem;
+}
+.플라스틱-animal-title {
+  color: #2d7d3e;
+}
+.플라스틱-animal-recycle {
+    color: #000000;
+    font-size: 1rem;
+}
+.종이-animal-title {
+  color: #2d7d3e;
+}
+.종이-animal-recycle {
+    color: #000000;
+    font-size: 1rem;
+}
+.스티로폼-animal-title {
+  color: #2d7d3e;
+}
+.스티로폼-animal-recycle {
+    color: #000000;
+    font-size: 1rem;
+}
+.유리-animal-title {
+  color: #2d7d3e;
+}
+.유리-animal-recycle {
+    color: #000000;
+    font-size: 1rem;
+}
+.종이팩-animal-title {
+  color: #2d7d3e;
+}
+.종이팩-animal-recycle {
+    color: #000000;
+    font-size: 1rem;
+}
+.종이컵-animal-title {
+  color: #2d7d3e;
+}
+.종이컵-animal-recycle {
+    color: #000000;
+    font-size: 1rem;
+}
+.비닐-animal-title {
+  color: #2d7d3e;
+}
+.비닐-animal-recycle {
+    color: #000000;
+    font-size: 1rem;
+}
+.캔-animal-title {
+  color: #2d7d3e;
+}
+.캔-animal-recycle {
+    color: #000000;
+    font-size: 1rem;
+}
+
+label {
+  cursor: pointer;
+  display: inline-block;
+  width: 90px;
+  height: 41px;
+  box-shadow: 0 0 0 8px #e5e9ea inset;
+  border-radius: 30px;
+  position: relative;
+}
