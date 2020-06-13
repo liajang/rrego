@@ -273,7 +273,6 @@ font-family: 'Poor Story', cursive;
     border: dashed 2.5px #000000;
     position: relative;
 }
-
 .layer {
 	margin-top: 23%;
 	object-fit: contain;
@@ -299,6 +298,12 @@ font-family: 'Poor Story', cursive;
     padding-bottom: 10px;
 }
 
+.ad-banner {
+	width: 320px;
+	margin: 0 auto;
+}
 
-
+.ad-banner-left {
+	width: 320px;
+}
 
