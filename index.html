@@ -77,7 +77,7 @@
 			<input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
 			<div class="drag-text">
 				<img src="img/upload.png" srcset="img/upload2x.png 2x,
-             img/upload3x.png 3x" class="layer">
+             img/upload3x.png 3x" class="mt-5 pt-5 layer">
 				<h3 class="container upload-text">Upload the Image</h3>
 			</div>
 		</div>
@@ -273,7 +273,7 @@
 			var recycle = "<div class='" + prediction[0].className + "-recycle pt-2 pb-2'>" + resultRecycle + "</div>"
 			$('.result-message').html(title + explain + recycle);
 			var barWidth;
-			for (let i = 0; i < maxPredictions; i++) {
+			for (let i = 0; i < 4; i++) {
 				if (prediction[i].probability.toFixed(2) > 0.1) {
 					console.log(prediction[i].className);
 					barWidth = Math.round(prediction[i].probability.toFixed(2) * 100) + "%";
