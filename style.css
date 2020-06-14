@@ -229,13 +229,6 @@ font-family: 'Poor Story', cursive;
     text-decoration: underline;
 }
 
-.file-upload-content {
-	object-fit: contain;
-	height: 50vw;
-	border-radius: 5px;
-	background-color: #efefef;
-}
-
 .drag-text {
 	object-fit: contain;
 	height: 30vw;
