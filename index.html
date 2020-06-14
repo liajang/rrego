@@ -97,7 +97,7 @@
 			<div class="addthis_inline_share_toolbox"></div>
 
 			<div class="pt-3 image-title-wrap">
-				<button type="button p-2" class="try-again-btn" onclick="gaReload1();" data-toggle="modal" data-target="#adModal">
+				<button type="button p-2" class="try-again-btn" onclick="removeUpload()">
 					<span class="try-again-text">다른 사진으로 재시도</span>
 				</button>
 			</div>
@@ -117,37 +117,6 @@
 			<p>&copy; rrego lia 2020. All Rights Reserved. </p>
 		</div>
 	</footer>
-
-	<!-- Modal -->
-	<div class="modal fade" id="adModal" tabindex="-1" role="dialog" aria-labelledby="adModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">				
-				<div class="modal-header">
-					<h5 class="modal-title" id="adModalLabel">(AD)광고 - 재시도를 한번 더 눌러주세요.</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body d-flex justify-content-center">
-					<ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-1hrj9wz5xz7fo" data-ad-width="300" data-ad-height="250"></ins>
-					<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-				</div>				
-				<div class="modal-footer d-flex justify-content-center">
-					<button type="button p-2" class="try-again-btn" onclick="removeUpload()">
-						<span class="try-again-text">다른 사진으로 재시도</span>
-					</button>
-				</div>
-			</div>
-		</div>
-	</div>
-	<script>
-		function gaReload1() {
-			gtag('event', '다른 사진으로 재시도 1차', {
-				'event_category': '다른 사진으로 재시도'
-			});
-		}
-	</script>
-
 	<script>
 		/**
 		 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
@@ -331,10 +300,13 @@
 						break;
 					case "종이팩":
 						labelTitle = "종이팩"
+						break;
 					case "종이컵":
 						labelTitle = "종이컵"
+						break;
 					case "비닐":
 						labelTitle = "비닐"
+						break;
 					case "캔":
 						labelTitle = "캔"
 						break;
